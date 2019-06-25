@@ -1,0 +1,1 @@
+webpackJsonp([0,3],{2:function(o,e,t){"use strict";function r(){console.log("testando modulo")}throw Object.defineProperty(e,"__esModule",{value:!0}),e.default=r,new Error("Falha ao carregar o modulo teste")}});

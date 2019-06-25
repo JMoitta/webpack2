@@ -21,12 +21,12 @@ module.exports = {
         new InlineManifestWebpackPlugin({
             name: 'webpackManifest'
         }),
-        new webpack.optimize.UglifyJsPlugin({
+        /*new webpack.optimize.UglifyJsPlugin({
             sourceMap: true
         }),
         new webpack.LoaderOptionsPlugin({
             minimize: true
-        }),
+        }),*/
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
@@ -43,5 +43,13 @@ module.exports = {
                 }
             }
         ]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        port: 8080
+    },
+    watchOptions: {
+        aggregateTimeout: 300,
+        ignored: /node_modules/
     }
 };

@@ -21,12 +21,12 @@ module.exports = {
         new InlineManifestWebpackPlugin({
             name: 'webpackManifest'
         }),
-        /*new webpack.optimize.UglifyJsPlugin({
+        new webpack.optimize.UglifyJsPlugin({
             sourceMap: true
         }),
         new webpack.LoaderOptionsPlugin({
             minimize: true
-        }),*/
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
@@ -41,6 +41,14 @@ module.exports = {
                 query: {
                     presets: [['es2015',{modules: false}]]
                 }
+            },
+            {
+                test: /\.less$/,
+                loader: ['style-loader', 'css-loader', 'less-loader']
+            },
+            {
+                test: /\.(woff|woff2|ttf|svg|eot)$/,
+                loader: ['url-loader']
             }
         ]
     },
@@ -51,5 +59,9 @@ module.exports = {
     watchOptions: {
         aggregateTimeout: 300,
         ignored: /node_modules/
-    }
+    },
+    performance: {
+        hints: false
+    },
+    devtool: 'source-map'
 };

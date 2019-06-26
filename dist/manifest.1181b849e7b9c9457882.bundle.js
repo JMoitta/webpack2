@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Webpack 2</title>
-</head>
-<body>
-    <input type="text">
-    <script>/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["webpackJsonp"];
 /******/ 	window["webpackJsonp"] = function webpackJsonpCallback(chunkIds, moreModules, executeModules) {
@@ -150,6 +142,4 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/ })
 /************************************************************************/
-/******/ ([]);</script>
-<script type="text/javascript" src="vendor.6166db7928d08499a32e.bundle.js"></script><script type="text/javascript" src="app.93b72e45c9b7f8fe95e2.bundle.js"></script></body>
-</html>
+/******/ ([]);

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Webpack 2</title>
-</head>
-<body>
-    <input type="text">
-    <script>/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["webpackJsonp"];
 /******/ 	window["webpackJsonp"] = function webpackJsonpCallback(chunkIds, moreModules, executeModules) {
@@ -88,7 +80,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + {"0":"6166db7928d08499a32e","1":"93b72e45c9b7f8fe95e2"}[chunkId] + ".bundle.js";
+/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + {"0":"664db38534ec01f687fb","1":"dca01000e89c57a85a00"}[chunkId] + ".bundle.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -150,6 +142,4 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/ })
 /************************************************************************/
-/******/ ([]);</script>
-<script type="text/javascript" src="vendor.6166db7928d08499a32e.bundle.js"></script><script type="text/javascript" src="app.93b72e45c9b7f8fe95e2.bundle.js"></script></body>
-</html>
+/******/ ([]);
